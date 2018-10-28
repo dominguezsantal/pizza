@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <title>Portland Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Welcome to Portland's Pizzeria</h2>
+      </div>
+
+      <!-- form one -->
+      <form id="pizzaSurvey">
+        <div class="form-group">
+          <p>Please order your pizza toppings that you would like:</p>
+          <h4>Meat types:</h4>
+          <input type="checkbox" name="meatType" value="#">Pepperoni<br>
+          <input type="checkbox" name="meatType" value="#">Ham<br>
+          <input type="checkbox" name="meatType" value="#">Bacon<br>
+          <input type="checkbox" name="meatType" value="#">Chicken<br>
+          <input type="checkbox" name="meatType" value="#">grilled salmon<br>
+        </div>
+        <!-- end of form one -->
+
+        <!-- form two -->
+          <div class="form-group">
+            <h4>Vegetable Types</h4>
+            <p>Select the vegetables you want on your pizza:</p>
+            <input type="checkbox" name="vegetableType" value="#">Onions<br>
+            <input type="checkbox" name="vegetableType" value="#">Peppers<br>
+            <input type="checkbox" name="vegetableType" value="#">Zuchinni<br>
+            <input type="checkbox" name="vegetableType" value="#">Grilled Cucumbers<br>
+            <input type="checkbox" name="vegetableType" value="#">Tomatoes<br>
+          </div>
+          <!-- end of form two -->
+
+          <!-- form three -->
+            <div class="form-group">
+              <h4>Cheese Types</h4>
+              <p>Select the cheese you want on your pizza:</p>
+              <input type="checkbox" name="cheeseType" value="bike">Mozarella<br>
+              <input type="checkbox" name="cheeseType" value="car">Pepper Jack<br>
+              <input type="checkbox" name="cheeseType" value="carpool">Provolone<br>
+              <input type="checkbox" name="cheeseType" value="walk">Feta<br>
+              <input type="checkbox" name="cheeseType" value="bus">Harvati<br>
+            </div>
+            <!-- end of form three -->
+       <button type="submit">Submit Selection</button>
+      </form>
+      <span id="answerBox">
+        <p>Thank you for ordering!</p>
+        <p>Your results are:
+          <b>
+            <span id="answer"></span>
+          </b>
+        </p>
+      </span>
+    </div>
+  </body>
+</html>
