@@ -1,0 +1,60 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    color: white;
+}
+body{
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://localadventurer.com/wp-content/uploads/2017/08/things-to-do-in-portland-bucket-list.jpg");
+    height: 1000px;
+}
+.row {
+  background-color: white;
+  color: black;
+  padding: 100px;
+  height: 500px;
+}
+
+.col-md-4 {
+  padding: 20px 50px;
+}
+form {
+  text-align: center;
+  float: left;
+}
+img {
+  flex-direction: column;
+  float: right;
+}
+.jumbotron {
+  background-color:inherit;
+  color: white;
+
+}

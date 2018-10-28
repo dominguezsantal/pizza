@@ -8,19 +8,7 @@ function toppingTypes(num1, num2){
   return num1 + num2;
 };
 
-function getCope(cope, stress) {
-  if (cope > 3) {
-    $("#answer").text("You are coping!");
-  } else {
-    if (stress > 5) {
-      $("#answer").text("Get some help please");
-    } else if (stress > 2) {
-      $("#answer").text("You're doing alright");
-    } else {
-      $("#answer").text("You're doing great!");
-    };
-  };
-};
+
 
 // var totalSign = stressSignInput + healthSignInput;
 
@@ -49,7 +37,7 @@ $(document).ready(function(){
 
     totalToppings = toppingTypes(meatTypeInput, vegetableType, cheeseType);
 
-    getCope(totalToppings);
+    totalToppings();
     // getAnswer(totalStress);
 
     // $("#fun-responses").show();
