@@ -18,7 +18,7 @@
               <h3>Let's start what size of pizza you want?</h2>
                 <div class="form-group">
               <label for="size">Size: </label>
-              <select class="size" name="size">
+              <select id="size" name="size">
                 <option value="small">Small($6)</option>
                 <option value="medium">Medium($8)</option>
                 <option value="large">Large($10)</option>
@@ -28,16 +28,16 @@
         <div class="form-group">
           <h4>Let's pick your crust:</h4>
           <div class="radio">
-            <label for="crust-type"><input type="radio" name="crust" value="thin">Thin Crust($0.10)</label>
+            <label for="crust"><input type="radio" name="crust" value="thin">Thin Crust($0.10)</label>
           </div>
           <div class="radio">
-            <label for="crust-type"><input type="radio" name="crust" value="regular">Regular Crust($0.00)</label>
+            <label for="crust"><input type="radio" name="crust" value="regular">Regular Crust($0.10)</label>
           </div>
           <div class="radio">
-            <label for="crust-type"><input type="radio" name="crust" value="thick">Thick Crust($0.10)</label>
+            <label for="crust"><input type="radio" name="crust" value="thick">Thick Crust($0.10)</label>
           </div>
           <div class="radio">
-            <label for="crust-type"><input type="radio" name="crust" value="greek">Greek Crust-Thick Crust with aoli and pesto ($0.15)</label>
+            <label for="crust"><input type="radio" name="crust" value="greek">Greek Crust-Thick Crust with aoli and pesto ($0.15)</label>
           </div>
         </div>
         <div class="row">
@@ -53,9 +53,9 @@
               <input type="checkbox" id="meat3" name="meat" value="pepperoni">
               <label for="meat3">Pepperoni($2)</label><br>
               <input type="checkbox" id="meat4" name="meat" value="salmon">
-              <label for="meat4">Salmon($3.50)</label><br>
+              <label for="meat4">Salmon($2)</label><br>
               <input type="checkbox" id="meat5" name="meat" value="steak">
-              <label for="meat5">Steak($4)</label><br>
+              <label for="meat5">Steak($2)</label><br>
             </div>
             <div class="col-md-4">
             <div class="form-group">
@@ -67,9 +67,9 @@
               <input type="checkbox" id="cheese3" name="cheese" value="provolone-cheese">
               <label for="cheese">Provolone($1.50)</label><br>
               <input type="checkbox" id="cheese4" name="cheese" value="american-cheese">
-              <label for="cheese">American($1)</label><br>
+              <label for="cheese">American($1.50)</label><br>
               <input type="checkbox" id="cheese5" name="cheese" value="pepperJack-cheese">
-              <label for="cheese">Pepper Jack($1)</label><br>
+              <label for="cheese">Pepper Jack($1.50)</label><br>
             </div>
             <div class="col-md-4">
             <div class="form-group">
