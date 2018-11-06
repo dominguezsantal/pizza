@@ -2,39 +2,47 @@
 
 function Pizza(size,toppings){
   this.size = size;
-  this.Toppings = Toppings;
-  this.cost = 0.00;
+  this.meat = meat;
+  this.cheese = cheese;
+  this.toppings = toppings;
+  this.sauce = sauce;
+  this.cost = 0;
 }
 
 //Pizza size pricing
-Pizza.prototype.costCalculator = function(topping) {
-  var pizzaPrice = 0;
+Pizza.prototype.priceCalculator = function() {
   if (this.size === "small") {
-    pizzaPrice = 6.00;
-  } else if (this.size === "medium") {
-    pizzaPrice = 8.00;
-  } else if (this.size === "large") {
-    pizzaPrice = 10.00;
-  } else if (this.size === "extra-large") {
-    pizzaPrice = 12.00;
+    this.cost = this.cost + 6;
+  }
+  else if (this.size === "medium") {
+    this.cost = this.cost + 8;
+  }
+  else if (this.size === "large") {
+    this.cost = this.cost + 10;
+  }
+  else if (this.size === "extra-large") {
+    this.cost = this.cost + 12;
   }
 
-function Toppings(crust,meat,cheese,veggies,fruit,sauce){
-  this.crust = crust;
-  this.meat = meat;
-  this.cheese = cheese;
-  this.veggie = veggie;
-  this.fruit = fruit;
-  this.sauce = sauce;
+//meats
+  for (var i = 0; i < this.meat.length; i++){
+    this.cost += 2;
+  }
+//Cheese
+  for (var i = 0; i < this.cheese.length; i++){
+    this.cost += 1.50;
+  }
+//toppings
+for (var i = 0; i < this.toppings.length; i++){
+  this.cost += 0.50;
+}
+//Sauce
+for (var i = 0; i < this.sauce.lenght; i++){
+  this.cost += 0.10;
 }
 
-//Sauce Pricing
-Toppings.prototype.costCalculator = function(topping) {
-  for totalCostCalculator;
-  if (this.sauce === "tomato" || this.sauce === "alfredo") {
-    pizzaPrice += 0.10;
-  }
-  if (this.crust === "thin" || this.crust === "regular" || this.crust === "thick"){
+
+  /*if (this.toppings === "thin" || this.toppings === "regular" || this.toppings === "thick"){
     pizzaPrice += 0.10;
   } else {
      pizzaPrice += 0.15;
@@ -45,13 +53,13 @@ Toppings.prototype.costCalculator = function(topping) {
   if (this.cheese === "mozarella-cheese" || this.cheese === "harvati-cheese" || this.cheese === "provolone-cheese" || this.cheese === "american-cheese" || this.cheese === "pepperJack-cheese" ) {
     pizzaPrice += 1.50;
   }
-  if (this.veggie === "tomato" || this.veggie === "bell peppers" || this.veggie === "onions" || this.veggie === "black olives" || this.veggie === "broccoli") {
+  if (this.toppings === "tomato" || this.toppings === "bell peppers" || this.toppings === "onions" || this.toppings === "black olives" || this.toppings === "broccoli") {
     pizzaPrice += 0.50;
   }
   if (this.fruit === "pineapple") {
     pizzaPrice += 0.50;
   }
-var totalCostCalculator = 'size' + 'crust' + 'meat' + 'cheese' + 'fruit' + 'sauce';
+var totalCostCalculator = 'size' + 'toppings' + 'meat' + 'cheese' + 'fruit' + 'sauce';*/
 
 //User-Interface Logic
 $(document).ready(function(){
@@ -59,17 +67,18 @@ $(document).ready(function(){
     event.preventDefault();
 
     var newPizza = new Pizza(size, topping);
-    var totalCostCalculator = $("size" + "crust" + "meat" + "cheese" + "fruit" + "sauce").val();
+    var totalCostCalculator = $("size" + "toppings" + "meat" + "cheese" + "fruit" + "sauce").val();
     $("#placed-orders").click(function(totalCostCalculator){
       $("#placed-orders").print();
+      console.log(pizzaPrice);
     });
 
     /*$('.form-group').click(function(Toppings){
      $("#size").print();
-     $("#crust").print();
+     $("#toppings").print();
      $("#meat").print();
      $("#cheese").print();
-     $("#veggie").print();
+     $("#toppings").print();
      $("#fruit").print();
      $("#sauce").print();
      */
